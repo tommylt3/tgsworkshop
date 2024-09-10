@@ -1,0 +1,27 @@
+.navbar nav li a {
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: auto;
+}
+
+.navbar nav li a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar nav li {
+    padding: auto;
+}
+.navbar ul {
+    list-style: none;
+    background: black; 
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+ul {
+    padding: 10px;
+    margin: 0;
+}
