@@ -1,0 +1,29 @@
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.navbar div {
+    justify-content: flex-start;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: auto;
+}
+
+.navbar ul {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.navbar a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
