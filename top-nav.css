@@ -1,7 +1,7 @@
 .navbar {
     overflow: hidden;
-    background-color: black;
-    color: white;
+    background-color:black;
+    color: snow;
     display: flex;
 }
 
@@ -20,10 +20,10 @@
 .navbar a {
     padding: 14px 16px;
     text-decoration: none;
-    color: white;
+    color: snow;
 }
 
 .navbar a:hover {
-    background-color: white;
+    background-color: snow;
     color: black;
 }
