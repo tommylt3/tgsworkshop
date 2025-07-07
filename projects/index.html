@@ -1,31 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="/main-page.css">
-    <link rel="stylesheet" href="/top-nav.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TGsWorkshop</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/projects/cards.css"/>
 </head>
-
 <body>
-    <div class="navbar">
-        <div>TGs Workshop</div>
-        <ul>
-            <a href="/">Home</a>
-            <a href="/aboutme">About Me</a>
-            <a href="/files/resume.pdf" target="_blank">Resume</a>
-            <a href="/projects">Projects</a>
-        </ul>
-    </div>
 
-    <section class="landing-page">
-        <div>
-            <h1>Projects</h1>
+  <header class="name-header">
+    <h1>Projects</h1>
+  </header>
+
+  <div class="gradient-bar"></div>
+
+  <ul class="project-list">
+    <li class="project-card" onclick="window.location.href='https://tommylt3.github.io/ProjectSCOREWebsite//'">
+        <img src="/files/Florida_Institute_of_Technology.svg" alt="Florida Tech Logo" class="project-image" />
+        <div class="project-content">
+            <h3 class="project-title">Student Online Code Review and Evalution</h3>
+            <p class="project-description">
+                <b>SCORE</b> is a full-stack platform for managing and grading student coding assignments. Built with React, Node.js, and MongoDB, it supports Google OAuth logins, secure SSH submissions via Rust, and multithreaded Python for spinning up isolated Docker containers to test and execute code in real time. Professors can give curated feedback, and assignments are automatically graded at deadline — making it a powerful tool for computer science education.
+            </p>
         </div>
-    </section>
+    </li>
+    <li class="project-card" onclick="window.location.href='https://github.com/tommylt3/Intro-To-Machine-Learning-Project'">
+        <img src="/files/logitech.avif" alt="Logitech Camera" class="project-image" />
+        <div class="project-content">
+            <h3 class="project-title">Keyboardless Typing</h3>
+            <p class="project-description">
+                An academic project, keyboardless typing is a machine learning-based system that predicts key presses using hand gestures instead of a physical keyboard. Designed for low-performance devices like Raspberry Pi, it uses a decision tree classifier built with Python, NumPy, Pandas, and SciKit-Learn to interpret gestures captured via camera input. Ideal for embedded systems or constrained environments, it enables text input without relying on traditional hardware peripherals.
+            </p>
+        </div>
+    </li>
+    <li class="project-card">
+        <img src="/files/arduino.jpg" alt="Arduino" class="project-image" />
+        <div class="project-content">
+            <h3 class="project-title">Self Driving Car Redesign</h3>
+            <p class="project-description">
+                A custom-engineered robotics kit developed to support scalable, affordable STEM education at home. By leveraging CAD modeling, 3D printing, and custom circuit design, the kit replaces expensive commercial alternatives while maintaining full functionality for teaching self-driving algorithms and electronics. Designed with cost-efficiency and accessibility in mind, it powers hands-on learning for students of all levels.
+            </p>
+        </div>
+    </li>
+    <li class="project-card" onclick="window.open('/files/Formally Modeling CI_CD.pdf', '_blank')">
+        <img src="/files/GitHub_Invertocat_Logo.svg.png" alt="Github Logo" class="project-image" />
+        <div class="project-content">
+            <h3 class="project-title">CI/CD Formalization</h3>
+            <p class="project-description">
+                Co-Authored a research paper exploring the formalization of CI/CD (Continuous Integration and Deployment) systems, analyzing automation reliability and adoption challenges in modern software pipelines. The work reviewed ten related studies, highlighting key successes and limitations of current practices. The paper advocates for structured CI/CD adoption to reduce manual errors and improve development efficiency.            
+            </p>
+        </div>
+    </li>
+   
+    <li class="project-card" onclick="window.location.href='https://github.com/tommylt3/ProjectE'">
+        <img src="/files/ProjectEFireball.png" alt="Alchemecial Stone" class="project-image" />
+        <div class="project-content">
+            <h3 class="project-title">ProjectE</h3>
+            <p class="project-description">
+                Contributed to an update of the popular Minecraft Java mod Project-E, focused on modernizing items, textures, and core game systems for compatibility with the Minecraft 1.20 release. Work included asset redesign, codebase adjustments, and ensuring seamless integration with the latest Minecraft engine changes.
+            </p>
+        </div>
+    </li>
+
+    <li class="project-card" onclick="window.location.href='https://github.com/tommylt3/Intro-To-Machine-Learning-Project'">
+        <img src="/files/wiisport.jpeg" alt="Wii Sports Logo" class="project-image" />
+        <div class="project-content">
+            <h3 class="project-title">Wii Sports AI</h3>
+            <p class="project-description">
+                A machine learning project that trains an algorithm to play Wii Tennis in real time using the Dolphin emulator. Built with Python and TensorFlow, it uses Voronoi segmentation, K-Means clustering, and a hierarchical model design to interpret game state and respond dynamically through Linux pipes. The result is an autonomous agent capable of mimicking human-level gameplay in a complex, fast-paced environment.
+            </p>
+        </div>
+    </li>
+    </ul>
+
+    <footer class="footer">
+    <a href="/" class="footer-button">🏠 Home</a>
+    <a href="/files/resume.pdf" class="footer-button" target="_blank" download>📄 Resume</a>
+    </footer>
 
 </body>
-
 </html>
