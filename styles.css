@@ -27,7 +27,7 @@ body {
   font-weight: bold;
 }
 
-/* Thin gradient bar */
+
 .gradient-bar {
   height: 5px;
   width: 200px;
@@ -124,4 +124,22 @@ body {
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+.contact-button {
+  background: linear-gradient(90deg, #955DE5, #B388EB);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(149, 93, 229, 0.4);
+  transition: all 0.25s ease;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  flex-direction: column;
 }
